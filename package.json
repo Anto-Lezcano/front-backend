@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Anto-Lezcano/front-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }

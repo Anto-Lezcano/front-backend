@@ -1,9 +1,12 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors());
+
 app.get("/saludo/:nombre", (req, res) => {
-  return res.send(`Hola${req.params.nombre}`);
+  return res.send(`Hola ${req.params.nombre}`);
 });
 
 app.listen(3000, () => {
