@@ -1,24 +1,48 @@
-📌Saludo personalizado
+# Validador de Usuarios con React y Node.js
 
-Este programa esta diseñado para que un usuario ingrese su nombre y el servidor le devuelva un saludo personalizado
+Esta es una aplicación web simple que permite validar si un nombre está registrado en una lista definida en el backend. Si el nombre es válido, se muestra un saludo personalizado.
 
-📂 Contenido
+## 🧩 Tecnologías utilizadas
 
-📌Requisitos
-Nodejs
+- **Frontend:** React con Vite + TypeScript
+- **Backend:** Node.js + Express
+- **Estilos:** CSS simple
 
-🔧Instalacion
+---
 
-Clona el repositorio en git con el siguiente comando:
+## 📁 Estructura del proyecto
 
+.
+├── backend/
+│ ├── src/
+│ │ ├── app.js # Servidor Express con dos endpoints
+│ │ └── db/
+│ └──lista_personas.js # Lista de usuarios válidos
+├── frontend/
+│ ├── src/
+│ │ ├── App.tsx
+│ │ ├── api/validarUsuApi.ts
+│ │ └── assets/App.css
+│ └── vite.config.ts
+├── README.md
+
+---
+
+## 🚀 Instalación y ejecución
+
+### 1. Clona el repositorio
+
+```bash
 git clone https://github.com/Anto-Lezcano/front-backend.git
+cd front-backend
 
-cd front_backend
-
-📌Ejecutar
-
+Backend
+cd server
 npm i
-
 npm run dev
 
-abrir el archivo html en un navegador
+Frontend
+cd client
+npm i
+npm run dev
+```
